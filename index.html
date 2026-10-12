@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicoversity - Your Medical Dream, Our Mission</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Colors Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B2545',
+              green: '#00875A',
+              greenHover: '#006C48',
+              bg: '#F8FAFC'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg font-sans text-gray-800 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- HEADER / NAVBAR -->
+  <header class="w-full bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <!-- Replace the icon with your logo image file -->
+        <img src="images/logo.png" alt="Medicoversity Logo" class="h-10 w-auto object-contain" />
+        <span class="text-2xl font-extrabold tracking-tight text-brand-navy">MEDICOVERSITY</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+        <a href="#" class="text-brand-green border-b-2 border-brand-green pb-1">Home</a>
+        <a href="#" class="hover:text-brand-green transition">Courses</a>
+        <a href="#" class="hover:text-brand-green transition">Test</a>
+        <a href="#" class="hover:text-brand-green transition">Instructor</a>
+        <a href="#" class="hover:text-brand-green transition">Lectures</a>
+        <a href="#" class="hover:text-brand-green transition">About Us</a>
+        <a href="#" class="hover:text-brand-green transition">Contact</a>
+      </nav>
+
+      <!-- Registration Button -->
+      <div>
+        <a href="#" class="bg-brand-green text-white font-medium px-5 py-2.5 rounded-full hover:bg-brand-greenHover transition flex items-center gap-2 shadow-sm">
+          Registration <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="max-w-7xl mx-auto px-6 py-12 md:py-16 flex-1 grid grid-cols-1 lg:grid-cols-12 items-center gap-12">
+    
+    <!-- Left Column (Text & Buttons) -->
+    <div class="lg:col-span-7 space-y-6">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-navy leading-tight">
+        Your Medical Dream, <br />
+        <span class="text-brand-green">Our Mission.</span>
+      </h1>
+      
+      <p class="text-gray-600 text-lg sm:text-xl max-w-xl leading-relaxed">
+        Every great doctor starts with a dream. Build your knowledge, strengthen your concept, and take the next step toward your medical future with Medicoversity.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center gap-4 pt-4">
+        <a href="#" class="bg-brand-green text-white font-semibold px-7 py-3.5 rounded-full hover:bg-brand-greenHover transition flex items-center gap-2 shadow-md">
+          Enroll Now <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+        <a href="#" class="border-2 border-brand-green text-brand-green font-semibold px-7 py-3.5 rounded-full hover:bg-brand-green/10 transition flex items-center gap-2">
+          Explore Free Lessons <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Column (Doctor Image & Background Glow) -->
+    <div class="lg:col-span-5 relative flex justify-center items-center">
+      <!-- Mint Green Background Glow Circle -->
+      <div class="absolute w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] bg-emerald-100 rounded-full blur-2xl -z-10"></div>
+      
+     
+
+      <!-- Doctor Image -->
+      <img 
+        src="images/doctor.png" 
+        alt="Doctor" 
+        class="max-w-full h-auto object-contain relative z-10 drop-shadow-md max-h-[480px]"
+        onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop'"
+      />
+    </div>
+
+  </main>
+
+  <!-- Script to render Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
